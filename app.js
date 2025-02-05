@@ -6,7 +6,15 @@ function agregarAmigo() {
     let nombre = document.getElementById('amigo').value;
     
     //Validando la entrada
-    nombre === '' ? alert('No dejes el campo vacio'):
+    if (nombre === "") {
+        alert("No dejes campos vacios")
+        return;
+    }
+
+    if (!isNaN(nombre)) {
+        alert("No instroduzcas numeros")
+        return;
+    }
 
     //Actualizar el array de amigos
     amigos.push(nombre);
