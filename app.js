@@ -1,6 +1,5 @@
 let amigos = [];
 
-
 function agregarAmigo() {
     //Capturando el valor del campo de entrada:
     let nombre = document.getElementById('amigo').value;
@@ -50,6 +49,7 @@ function actualizarListaAmigos() {
 
     console.log('Lista de amigos actualizada');
 }
+
 
 
 function sortearAmigo() {
