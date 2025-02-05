@@ -21,7 +21,6 @@ function agregarAmigo() {
     //Limpiando el campo de entrada:
     document.getElementById('amigo').value = '';
 
-    //Imprimiendo en la consola el resultado
     actualizarListaAmigos();
 }
   
