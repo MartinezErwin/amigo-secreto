@@ -22,8 +22,34 @@ function agregarAmigo() {
     //Limpiando el campo de entrada:
     document.getElementById('amigo').value = '';
 
-    //Imprimiendo en la consola el resultado
-    console.log(amigos);   
+    //Llamando a la funcion 
+    actualizarListaAmigos();
 }
   
+
+
+function actualizarListaAmigos() {
+    //Obteniendo el elemento
+    let elemento = document.getElementById('listaAmigos');
+    
+    // Limpiaando la lista existente
+    elemento.innerHTML = '';
+
+    // Iterar sobre el arreglo amigos
+    for (let i = 0; i < amigos.length; i++) {
+        let li = document.createElement('li');
+        li.textContent = amigos[i]; // Agregar el texto al elemento <li>
+        fragmento.appendChild(li);  // Agregar el <li> al fragmento
+    }
+
+    // Agregar todos los elementos de una vez
+    elemento.appendChild(fragmento);
+
+    console.log('Lista de amigos actualizada');
+}
+
+
+function sortearAmigo() {
+    
+}
 
